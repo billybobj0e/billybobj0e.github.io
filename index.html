@@ -1,19 +1,54 @@
 <html>
   <head>
     <title>Sup peoples</title>
+    <style>
+      body{text-align:center;
+        background-color:lightblue;
+        color:black;}
+    </style>
+    <script>
+    function changePic(){
+      document.getElementById("car").src="http://i2.cdn.turner.com/money/dam/assets/160302134900-2016-geneva-auto-show-bugatti-chiron-1100x619.jpg";
+    }
+   
+    
+    </script>
   </head>
-  <body style="text-align:center;background-color:black;color:purple;">
+    <body>
+ <p id="nav">
+         <a href="index.html">Home</a>
+         <a href="aboutme.html">About Me</a>
+   <a href="coolcars.html">Cool Cars</a>
+         <a href="projects.html">My Projects</a>
+       </p>
+
+    
+   
     <div style="background-color:white;color:blue;
                 margin:25px;padding:25px;
                 border-radius:15px;">
       hello
     </div>
     <h1>
-       I Love Cars!
-    </h1>
+      I Love Cars!
+     
     
+      
+    </h1>
+   
    Helloo peoples of the interwebs!
-     <img style="height:1000px" src="https://s-media-cache-ak0.pinimg.com/originals/1f/b4/e5/1fb4e5b1e42a459cc8b4eb53424a1605.jpg" 
-          src="http://images.askmen.com/top_10/cars/1277926139_top-10-american-cars-of-all-time_10.jpg">
+    <p>
+   
+    </p>
+    
+    
+     
+   <img id="car" style="height:750px" 
+          src="http://i2.cdn.cnn.com/cnnnext/dam/assets/160301104845-chiron-2-super-169.jpg"> 
+      <p>
+          <input type="button" value="change car" onclick="changePic();" />
+        
+      </p>
+      
   </body>
 </html>
