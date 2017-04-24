@@ -5,6 +5,21 @@
       body{text-align:center;
         background-color:lightblue;
         color:black;}
+       #tictactoe_board{
+       margin-left:auto;
+       margin-right:auto;
+      width:350px;
+      height:350px;
+       }   
+       .box{
+       border-style:solid;
+       float:left;
+       text-align:center;
+       line-height:100px;
+       vertical-align:middle;
+       height:100px;
+       width:100px;
+       background-color:white;}
     </style>
   </head>
   <body>
@@ -22,18 +37,18 @@
      <input type="button" value="X" onclick="chooseX()"/>
      <input type="button" value="O" onclick="chooseO()"/>
      <div id="notes">
-       choose X or O to start
+       Choose X or O to Start
       </div>
       <div id="tictactoe_board">
-        <div class="box" onclick="makeMove()"></div>
-        <div class="box" onclick="makeMove()"></div>
-        <div class="box" onclick="makeMove()"></div> 
-        <div class="box" onclick="makeMove()"></div>
-        <div class="box" onclick="makeMove()"></div> 
-        <div class="box" onclick="makeMove()"></div> 
-        <div class="box" onclick="makeMove()"></div> 
-        <div class="box" onclick="makeMove()"></div> 
-        <div class="box" onclick="makeMove()"></div>
+        <div class="box" id="row1col1" onclick="makeMove()"></div>
+        <div class="box" id="row1col2" onclick="makeMove()"></div>
+        <div class="box" id="row1col3" onclick="makeMove()"></div> 
+        <div class="box" id="row2col1" onclick="makeMove()"></div>
+        <div class="box" id="row2col2" onclick="makeMove()"></div> 
+        <div class="box" id="row2col3" onclick="makeMove()"></div> 
+        <div class="box" id="row3col1" onclick="makeMove()"></div> 
+        <div class="box" id="row3col2" onclick="makeMove()"></div> 
+        <div class="box" id="row3col3" onclick="makeMove()"></div>
       
       </div>
     
